@@ -1,0 +1,110 @@
+* using log directory 'C:/Users/marks/OneDrive/Documents/01_Masters_Degree_Documents/Research/KellyLab Protocols/microDilutions.Rcheck'
+* using R version 4.2.1 (2022-06-23 ucrt)
+* using platform: x86_64-w64-mingw32 (64-bit)
+* using session charset: UTF-8
+* using options '--no-manual --as-cran'
+* checking for file 'microDilutions/DESCRIPTION' ... OK
+* checking extension type ... Package
+* this is package 'microDilutions' version '0.1.0'
+* package encoding: UTF-8
+* checking package namespace information ... OK
+* checking package dependencies ... OK
+* checking if this is a source package ... OK
+* checking if there is a namespace ... OK
+* checking for executable files ... OK
+* checking for hidden files and directories ... OK
+* checking for portable file names ... OK
+* checking serialization versions ... OK
+* checking whether package 'microDilutions' can be installed ... OK
+* checking installed package size ... OK
+* checking package directory ... OK
+* checking for future file timestamps ... OK
+* checking DESCRIPTION meta-information ... OK
+* checking top-level files ... OK
+* checking for left-over files ... OK
+* checking index information ... OK
+* checking package subdirectories ... OK
+* checking R files for non-ASCII characters ... OK
+* checking R files for syntax errors ... OK
+* checking whether the package can be loaded ... OK
+* checking whether the package can be loaded with stated dependencies ... OK
+* checking whether the package can be unloaded cleanly ... OK
+* checking whether the namespace can be loaded with stated dependencies ... OK
+* checking whether the namespace can be unloaded cleanly ... OK
+* checking loading without being on the library search path ... OK
+* checking dependencies in R code ... OK
+* checking S3 generic/method consistency ... OK
+* checking replacement functions ... OK
+* checking foreign function calls ... OK
+* checking R code for possible problems ... NOTE
+nguL_to_gL: no visible binding for global variable 'ng_uL'
+Undefined global functions or variables:
+  ng_uL
+* checking Rd files ... OK
+* checking Rd metadata ... OK
+* checking Rd line widths ... OK
+* checking Rd cross-references ... OK
+* checking for missing documentation entries ... OK
+* checking for code/documentation mismatches ... WARNING
+Codoc mismatches from documentation object 'nguL_to_gL':
+nguL_to_gL
+  Code: function(ng_per_uL)
+  Docs: function(concentration_nguL)
+  Argument names in code not in docs:
+    ng_per_uL
+  Argument names in docs not in code:
+    concentration_nguL
+  Mismatches in argument names:
+    Position: 1 Code: ng_per_uL Docs: concentration_nguL
+
+* checking Rd \usage sections ... WARNING
+Undocumented arguments in documentation object 'nguL_to_gL'
+  'concentration_nguL'
+
+Undocumented arguments in documentation object 'set_pipette_to'
+  'c1' 'v1' 'c2'
+
+Functions with \usage entries need to have the appropriate \alias
+entries, and all their arguments documented.
+The \usage entries must correspond to syntactically valid R code.
+See chapter 'Writing R documentation files' in the 'Writing R
+Extensions' manual.
+* checking Rd contents ... OK
+* checking for unstated dependencies in examples ... OK
+* checking examples ... ERROR
+Running examples in 'microDilutions-Ex.R' failed
+The error most likely occurred in:
+
+> base::assign(".ptime", proc.time(), pos = "CheckExEnv")
+> ### Name: nguL_to_gL
+> ### Title: To solve microliters needed for desired concentration of RNA/DNA
+> ### Aliases: nguL_to_gL
+> 
+> ### ** Examples
+> 
+> nguL_to_gL("25")
+Error in nguL_to_gL("25") : could not find function "nguL_to_gL"
+Execution halted
+* checking for unstated dependencies in 'tests' ... OK
+* checking tests ... ERROR
+  Running 'testthat.R'
+Running the tests in 'tests/testthat.R' failed.
+Last 13 lines of output:
+  > # This file is part of the standard setup for testthat.
+  > # It is recommended that you do not modify it.
+  > #
+  > # Where should you do additional test configuration?
+  > # Learn more about the roles of various files in:
+  > # * https://r-pkgs.org/tests.html
+  > # * https://testthat.r-lib.org/reference/test_package.html#special-files
+  > 
+  > library(testthat)
+  > library(microDilutions)
+  > 
+  > test_check("microDilutions")
+  Error: 'ansi_hyperlink_types' is not an exported object from 'namespace:cli'
+  Execution halted
+* checking for non-standard things in the check directory ... OK
+* checking for detritus in the temp directory ... OK
+* DONE
+Status: 2 ERRORs, 2 WARNINGs, 1 NOTE

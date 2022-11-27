@@ -1,0 +1,4 @@
+nguL_to_gL              To solve microliters needed for desired
+                        concentration of RNA/DNA
+set_pipette_to          This function is based off the simple equation:
+                        c1v1 = c2v2

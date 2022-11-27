@@ -1,0 +1,19 @@
+Package: microDilutions
+Type: Package
+Title: Solves redundant math when performing microdilutions.
+Version: 0.1.0
+Author: Mark Yeats
+Maintainer: marksyeats98@gmail.com
+Description: The first function (micro_to_std) takes a numerical input for the concentration
+(ng/µL) of your RNA/DNA sample and returns the concentration in g/L. The second function solves for v2 
+(the final volume of the desired concentration, c2) then it finds the absolute difference between v1 and v2
+(the volume of liquid needed in the sample to reach c2). The function the converts
+that "volume to add" in to ng/µL, which will be the numerical value to set your pipette
+to reach the final concentration, c2.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.2.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
